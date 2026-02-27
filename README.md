@@ -1,7 +1,5 @@
 # Fine-tuned Spark-TTS: German Emotional Speech Synthesis
 
-![Evaluation Results](outputs/test_comparison.png)
-
 This repository contains a fine-tuned implementation of the **Spark-TTS (0.5B)** model, specialized for German speech synthesis with advanced support for **emotional cues** and **non-verbal audio tokens**.
 
 The model was fine-tuned using LoRA (Low-Rank Adaptation) on a curated German dataset containing high-quality audio with diverse emotional expressions and non-verbal cues.
