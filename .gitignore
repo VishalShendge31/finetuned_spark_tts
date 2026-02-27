@@ -1,0 +1,34 @@
+# Large Folders
+best_model/
+processed_dataset/
+spark_tts_venv/
+outputs/
+Spark-TTS-0.5B/
+output_audio/
+hyperparameter_results*/
+unsloth_compiled_cache/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+
+# Environment
+.env
+.venv
+env/
+
+# Logs and results
+*.txt
+*.log
+*.png
+*.jpg
+*.wav
+
+# Except important docs
+!README.md
+
+# OS files
+.DS_Store
+Thumbs.db

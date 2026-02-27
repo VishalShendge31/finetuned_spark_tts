@@ -1,0 +1,41 @@
+# ==============================================================================
+# Spark-TTS Fine-Tuning: Project Requirements
+# Optimized for: Windows 10/11 + RTX 5070 (12GB) + Python 3.10+
+# ==============================================================================
+
+# --- PyTorch (Managed Installation) ---
+# Install separately with CUDA 12.1+ before running pip install -r requirements.txt
+# Example: pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+# --- Core ML/DL Frameworks ---
+unsloth                          # Fast fine-tuning back-end
+transformers==4.56.2             # NLP architecture
+datasets>=3.4.1,<4.0.0           # Data management
+accelerate                       # Distributed/GPU acceleration
+peft                             # Parameter-Efficient Fine-Tuning (LoRA)
+trl==0.22.2                      # Training RL/Fine-tuning utilities
+bitsandbytes                     # 8-bit/4-bit quantization support
+
+# --- Audio Processing ---
+torchaudio                       # Audio I/O and transforms
+soundfile                        # Audio file reading/writing
+omegaconf                        # YAML configuration management
+einx                             # Tensor operations for Spark-TTS
+
+# --- Hugging Face Ecosystem ---
+huggingface_hub>=0.34.0          # Model/dataset hosting access
+sentencepiece                    # Tokenization
+protobuf                         # Serialization
+
+# --- Data Science & Utilities ---
+matplotlib                       # Visualization (Loss plots)
+seaborn                          # Statistical plots
+pandas                           # Data analysis
+numpy                            # Numerical computing
+scikit-learn                     # Evaluation metrics
+tqdm                             # Progress bars
+ipython                          # Interactive environment support
+num2words                        # German number normalization (Utils)
+
+# --- Development ---
+codecs                           # Windows terminal encoding fixes (Evaluation)
